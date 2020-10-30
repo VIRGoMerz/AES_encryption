@@ -1,0 +1,1 @@
+aarch64-himix100-linux-g++  -Wall -fpermissive -std=c++11  -rdynamic CMakeFiles/AES_encryption.dir/src/Cryptopp_test.cpp.o CMakeFiles/AES_encryption.dir/src/crc32.cpp.o  -o AES_encryption  -L/home/merz/learn/AES_encryption/lib/3559 -Wl,-rpath,/home/merz/learn/AES_encryption/lib/3559 -lcryptopp -lpthread -lstdc++ 
