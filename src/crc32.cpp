@@ -156,15 +156,15 @@ static const uint32_t crc_table[256] =
 uint32_t crc32(uint32_t crc, const char *buf, long long len)
 {
     if (buf == NULL) 
-	{
-		return 0UL;
-	}
+    {
+        return 0UL;
+    }
 
 #ifdef DYNAMIC_CRC_TABLE
     if (crc_table_empty)  
-	{
-		make_crc_table();
-	}
+    {
+        make_crc_table();
+    }
 #endif /* DYNAMIC_CRC_TABLE */
 
     crc = crc ^ 0xffffffffUL;
